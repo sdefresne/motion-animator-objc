@@ -25,6 +25,10 @@
               forKey:(NSString *)key
           completion:(void(^)(void))completion;
 
+- (void)pauseAllAnimations;
+- (void)setFractionComplete:(CGFloat)fractionComplete;
+- (void)startAllAnimationsReversed:(BOOL)reversed;
+
 - (void)commitCurrentAnimationValuesToAllLayers;
 - (void)removeAllAnimations;
 
